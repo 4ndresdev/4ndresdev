@@ -1,0 +1,27 @@
+.imagesContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    z-index: 1;
+    margin: 0 1rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:first {
+    left: 0;
+}
+
+.btn:last-child {
+    right: 0;
+}
