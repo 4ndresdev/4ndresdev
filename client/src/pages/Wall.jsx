@@ -3,7 +3,6 @@ import { Box, Container, Avatar, Typography, Grid } from "@mui/material";
 import styles from "../styles/Wall.module.css";
 import Social from "../components/Social";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import CallIcon from "@mui/icons-material/Call";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TimeLineComponent from "../components/TimeLine";
@@ -52,7 +51,7 @@ const Wall = () => {
         <Avatar
           className={styles.smallAvatar}
           alt="Andrés"
-          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src={require("../images/profile.jpeg")}
         />
         <video autoPlay loop muted src={require("../videos/video.mp4")}></video>
         <Box className={styles.container__social} gap={1}>
@@ -61,11 +60,6 @@ const Wall = () => {
             icon={<WhatsAppIcon />}
             _blank
             link="https://wa.link/ici281"
-          />
-          <Social
-            icon={<TwitterIcon />}
-            _blank
-            link="https://twitter.com/4ndresdev"
           />
           <Social
             icon={<LinkedInIcon />}
@@ -82,7 +76,7 @@ const Wall = () => {
         <Avatar
           className={styles.avatar}
           alt="Andrés"
-          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src={require("../images/profile.jpeg")}
         />
         <Box padding={3} className={styles.content}>
           <Typography className={styles.name} variant="h4" fontWeight="bold">
