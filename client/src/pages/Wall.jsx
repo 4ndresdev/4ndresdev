@@ -5,6 +5,7 @@ import Social from "../components/Social";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import CallIcon from "@mui/icons-material/Call";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TimeLineComponent from "../components/TimeLine";
 import Post from "../components/Post";
 
@@ -55,9 +56,22 @@ const Wall = () => {
         />
         <video autoPlay loop muted src={require("../videos/video.mp4")}></video>
         <Box className={styles.container__social} gap={1}>
-          <Social icon={<CallIcon />} />
-          <Social icon={<WhatsAppIcon />} />
-          <Social icon={<TwitterIcon />} />
+          <Social icon={<CallIcon />} link="tel:+523931072706" />
+          <Social
+            icon={<WhatsAppIcon />}
+            _blank
+            link="https://wa.link/ici281"
+          />
+          <Social
+            icon={<TwitterIcon />}
+            _blank
+            link="https://twitter.com/4ndresdev"
+          />
+          <Social
+            icon={<LinkedInIcon />}
+            _blank
+            link="https://www.linkedin.com/in/jose-andres-beltran-ruiz-99b928235/"
+          />
         </Box>
       </Box>
       <Container
